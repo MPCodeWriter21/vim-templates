@@ -1,4 +1,4 @@
-# vim-templates ([vimawesome](http://vimawesome.com/plugin/vim-templates-are-made-of))
+# A fork of vim-templates ([vimawesome](http://vimawesome.com/plugin/vim-templates-are-made-of))
 
 Create files from predefined templates. Templates are files with `.template` extension.
 

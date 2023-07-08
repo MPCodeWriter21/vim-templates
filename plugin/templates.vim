@@ -88,7 +88,7 @@ function <SID>ExpandFilePathTemplates()
     call <SID>ExpandTemplate('FILEF', expand('%:p'))
     call <SID>ExpandTemplate('FILER', @%)
     call <SID>ExpandTemplate('FILED', expand('%:p:h'))
-    call <SID>ExpandTemplate('FILEP', expand('%:h:t'))
+    call <SID>ExpandTemplate('FILEP', expand('%:p:h:t'))
     call <SID>ExpandTemplate('FILERD', expand('%:h'))
 endfunction
 
