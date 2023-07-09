@@ -161,8 +161,6 @@ function <SID>ExpandLicenseTemplates()
     call <SID>ExpandTemplate('COPYRIGHT', l:copyright)
 
     call <SID>ExpandLicenseFile()
-
-
 endfunction
 
 function <SID>ExpandLanguageTemplates()
@@ -242,7 +240,7 @@ function <SID>InitializeTemplateForExtension(filepart, template_path)
     let l:template_path = fnameescape(a:template_path.'/'.a:filepart.'.template')
     if (filereadable(l:template_path))
         call <SID>TryReadSettings(a:template_path)
-        execute 'silent 0r '.l:template_path
+        execute 'silent 0r '.l:template_path.' | $d'
         return 1
     endif
     return 0
